@@ -15,6 +15,10 @@ PRODUCT_PACKAGES += \
     X00TDFrameworksResTarget \
     X00TDWifiOverlay
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    init.asus.rc
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
