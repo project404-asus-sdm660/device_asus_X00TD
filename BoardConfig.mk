@@ -16,6 +16,10 @@ TARGET_OTA_ASSERT_DEVICE := ASUS_X00TD,X00TD,X00T
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := sdm636
 
+# HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/vintf/manifest.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/configs/vintf/device_framework_compatibility_matrix.xml
+
 # Kernel
 KERNEL_DEFCONFIG := asus/X00TD_defconfig
 
